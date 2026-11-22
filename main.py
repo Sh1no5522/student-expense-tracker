@@ -2,10 +2,10 @@ from tracker import ExpenseTracker
 
 
 def main():
-    tracker = ExpenseTracker("sample_expenses.json")
+    tracker = ExpenseTracker("sample_expenses.json", export_dir="exports")
     if not tracker.expenses:
-        tracker.add_expense("Cafeteria lunch", 4.50, "Food")
-        tracker.add_expense("Bus ticket", 2.25, "Transport")
+        tracker.add_expense("Cafeteria lunch", "4.50", "Food")
+        tracker.add_expense("Bus ticket", "2.25", "Transport")
     print(tracker.generate_report("text"))
 
 

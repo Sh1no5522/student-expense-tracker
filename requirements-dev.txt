@@ -1,0 +1,4 @@
+# App runs with Python standard library only.
+# Optional dev tools:
+ruff==0.6.9
+mypy==1.11.2
